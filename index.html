@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63a0f2140e.js"></script>
+</head>
+<body>
+    <div class="main-container" >
+        <div class="inside-contain" id="snow-fall">
+            <div class="snow-box">
+                <div class="left-contain">
+                    <div class="navbar">
+                        <span class="icon">
+                            <a href="#">
+                                <img src="img/sun.png" alt="">
+                            </a>
+                        </span>
+                        <span class="navbar-brand">tempo</span>
+                    </div>
+                    <div class="temp-head">
+                        <div class="temp-heading">
+                            <span class="text-temp">Global</span>
+                            <span class="text-temp2">Weather</span>
+                        </div>
+                        <div class="temp-icon">
+                            <span class="rain-per">
+                                <img src="img/drop.png" alt="">
+                                <span id="humadity">53%</span>
+                            </span>
+                        </div>
+                    </div>    
+                    <div class="main-temp">
+                        <div class="circle">
+                            <img src="img/circle-effect.png" alt="">
+                            <span class="temp-in" id="id1"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="sc1">
+                    <div class="side-container">
+                        <div class="search-palece">
+                            <input type="text" id="search-location" placeholder="Search" autofocus onKeyUp="enter(this,value)">
+                            <button>
+                                <img src="img/magnifier.png" alt="">
+                            </button>
+                        </div>
+                        <div class="other-pallet">
+                            <span class="side-temp">
+                                <span class="temp-box-01">
+                                    <i class="fas fa-temperature-high"></i>
+                                </span>
+                                <span class="temp-text-box-01">
+                                    <span class="c01">Temperature</span>
+                                    <span class="c02" id="side-temp"></span>
+                                    
+                                </span>
+                            </span>
+                            <span class="side-temp">
+                                <span class="temp-box-01 box-02">
+                                    <!-- <img src="img/thermometer.png" alt=""> -->
+                                    <i class="far fa-compass"></i>
+                                </span>
+                                <span class="temp-text-box-01">
+                                    <span class="c01">Location</span>
+                                    <span class="c02" id="location">20C</span>
+                                    
+                                </span>
+                            </span>
+                            <span class="side-temp">
+                                <span class="temp-box-01 box-03">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <span class="temp-text-box-01">
+                                    <span class="c01">Status</span>
+                                    <span class="c02" id="main-stats">20C</span>
+                                    
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
